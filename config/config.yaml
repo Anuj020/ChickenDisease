@@ -11,3 +11,11 @@ prepare_base_model:
   root_dir: artifacts/prepare_base_model
   base_model_path: artifacts/prepare_base_model/base_model.h5 # vgg 16 model save as it is
   updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5 # add some custom layers in the end of model.
+
+
+
+# after some points it will save  epoche some checkpoints if you stop then and you want to continue again from there 
+prepare_callbacks:
+  root_dir: artifacts/prepare_callbacks
+  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
