@@ -1,6 +1,6 @@
 from CNNclassifier.constants import *
 from CNNclassifier.utils.common import read_yaml, create_directories
-from CNNclassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig, TrainingConfig
+from CNNclassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig, TrainingConfig,EvaluationConfig
 import os
 class ConfigurationManager:
     def __init__(
@@ -83,3 +83,14 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model= "/Users/anuj/Desktop/ChickenDisease/artifacts/training/model.h5",
+            training_data= "artifacts/data_ingestion/Chicken-fecal-images",
+            all_params=self.params,
+            params_batch_size= self.params.BATCH_SIZE,
+            params_image_size= self.params.IMAGE_SIZE
+            
+        )
+        return eval_config
