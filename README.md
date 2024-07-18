@@ -1,5 +1,5 @@
 # ChickenDisease
-# Note: We don't require DATA VALIDATION in Classification problem UNLESS we have Object detection, NLP problem,          and Machine learning problem.
+### Note: We don't require DATA VALIDATION in Classification problem UNLESS we have Object detection, NLP problem,         and Machine learning problem.
 # WorkFlows
 
 1. Update config.yaml
@@ -19,7 +19,7 @@
 Clone the repository
 
 ```bash
-https://github.com/entbappy/Chicken-Disease-Classification--Project
+https://github.com/Anuj020/ChickenDisease
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
