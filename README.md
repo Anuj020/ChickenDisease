@@ -1,5 +1,5 @@
 # ChickenDisease
-### Note: We don't require DATA VALIDATION in Classification problem UNLESS we have Object detection, NLP problem,         and Machine learning problem.
+
 # WorkFlows
 
 1. Update config.yaml
